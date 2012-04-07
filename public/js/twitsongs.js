@@ -57,10 +57,6 @@ $(function(){
 	$("#info").submit(function(e){
 		e.preventDefault();
 		twit.start();
-		setTimeout(function(){
-			alert('Your session timed out');
-			socket.emit('stop', {});
-		},1000*60*45);
 	});
 	
 	socket.on('status', function(status) {
