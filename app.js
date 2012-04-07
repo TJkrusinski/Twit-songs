@@ -56,7 +56,7 @@ io.sockets.on('connection', function (socket) {
 	}
 	
 	socket.on('track', function(status){
-		twitter.saveLook(status);
+		funcs.saveLook(status);
 		socket.twitter = new Twitter(twitInfo);
 		socket.twitter.stream('statuses/filter', {track:status}, function(stream){
 			socket.twitter = stream;
