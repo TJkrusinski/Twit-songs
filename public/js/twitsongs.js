@@ -15,7 +15,7 @@ $(function(){
 		$(".songs").animate({
 			top:'9em'
 		},400);
-	},00)
+	},500)
 	
 	
 	var twit = {
@@ -41,7 +41,6 @@ $(function(){
 		},
 		
 		addStatus: function(status){
-			console.log(status);
 			var html = "<div class='tweet' style='opacity:0'>";
 			html+= "<a href='http://www.twitter.com/"+status.user.screen_name+"'><img src='"+status.user.profile_image_url+"' alt='"+status.user.screen_name+"'></a>";
 			html+= "<div class='tweet-inner'><h1>"+status.text+"</h1>";
@@ -61,7 +60,7 @@ $(function(){
 		setTimeout(function(){
 			alert('Your session timed out');
 			socket.emit('stop', {});
-		},1000*60*15);
+		},1000*60*45);
 	});
 	
 	socket.on('status', function(status) {
