@@ -94,7 +94,7 @@ body {
 	width: 75%;
 }
 .tweet img {
-	width: 8%; height: 8%;
+	width: 50px; height: 50px;
 	float: left;
 	
 }
@@ -111,6 +111,9 @@ body {
 	color: #c1deeb;
 	font-size: .7em;
 }
+.tweet .tweet-inner h2 a {
+	color: #c4e0ec;
+}
 
 .clouds {
 	position: fixed;
@@ -125,4 +128,15 @@ body {
 	bottom: 0; right: 0; left: 0; top: 92%;
 	height: 8%;
 	z-index: 99;
+}
+.made {
+	position: fixed;
+	z-index: 103;
+	bottom: 1em;
+	left: 1em;
+	color: #8cb2c5;
+	font-size: .8em;
+}
+.made a {
+	color: #8cb2c5;
 }

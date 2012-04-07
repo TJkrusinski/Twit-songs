@@ -43,6 +43,10 @@ app.get('/twitter?', function (req, res) {
 	});
 });
 
+app.get('/', function(req, res){
+	res.redirect('/twitter');
+});
+
 io.sockets.on('connection', function (socket) {
 	
 	var listen = function(socket){
