@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+body {
+	position: relative;
+	background: #8ec1da;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+.clear {
+	clear: both;
+}
+.wrap {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.twit {
+	position: absolute;
+	left: 25%; top: -18em;
+	background: url('/img/twit.png') no-repeat;
+	height: 160px; width: 352px;
+	z-index: 10;
+}
+
+
+.songs {
+	position: absolute;
+	top: -15em;
+	left: 35%;
+	background: url('/img/songs.png') no-repeat;
+	height: 187px; width: 481px;
+	z-index: 11;
+}
+
+#info {
+	display: none;
+	width: 540px;
+	padding: 23em 0 0 0;
+	margin: 0 auto;
+	display: block;
+}
+#info div input#subs, #info div {
+	width: 100%;
+	display: block;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#info div {
+	-webkit-box-shadow: 0px 3px 3px 0px #5a94b1;
+	-moz-box-shadow: 0px 3px 3px 0px #5a94b1;
+	box-shadow: 0px 3px 3px 0px #5a94b1;
+}
+#info input#subs {
+	border: 0;
+	padding: .8em;
+	-webkit-box-shadow: inset 0px 0px 3px 0px #1e3e4d;
+	-moz-box-shadow: inset 0px 0px 3px 0px #1e3e4d;
+	box-shadow: inset 0px 0px 3px 0px #1e3e4d;
+	font-size: 1.4em;
+	color: #8ec1da;
+}
+#info input:focus {
+	outline: 0;
+}
+#go {
+	float: right;
+	margin: 1em 0 0 0;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: 0px 3px 3px 0px #5a94b1;
+	-moz-box-shadow: 0px 3px 3px 0px #5a94b1;
+	box-shadow: 0px 3px 3px 0px #5a94b1;
+	padding: .8em 1em;
+	background: #fff;
+	border: 0;
+	color: #8ec0d8;
+	font-size: .9em;
+	cursor: pointer;
+}
+#alert {
+	display: inline-block;
+	color: #c4e0ec;
+	padding: 1em 0 0 0;
+	font-size: .8em;
+}
+.tweet {
+	margin: 2em auto;
+	width: 75%;
+}
+.tweet img {
+	width: 8%; height: 8%;
+	float: left;
+	
+}
+.tweet .tweet-inner {
+	float: right;
+	width: 85%;
+	vertical-align: top;
+}
+.tweet .tweet-inner h1 {
+	font-size: 1em;
+	color: #42606e;
+}
+.tweet .tweet-inner h2 {
+	color: #c1deeb;
+	font-size: .7em;
+}
+
+.clouds {
+	position: fixed;
+	bottom: 0; right: 0; left: 0;
+	height: 150px;
+	background: url('/img/clouds.png') repeat-x;
+	z-index: 100;
+}
+.clouds-bottom {
+	position: fixed;
+	background: #c1dfed;
+	bottom: 0; right: 0; left: 0; top: 92%;
+	height: 8%;
+	z-index: 99;
+}

@@ -1,0 +1,22 @@
+!!! 5
+html
+	head
+		title TwitSongs | Track Twitter Topics
+		link(href="/css/twitsongs.css",type="text/css", rel="stylesheet")
+	body
+		div.wrap
+			div.twit
+			div.songs
+			form#info(method="Your Mom", action="http://www.twitter.com/tjkrusinski", style="display:none")
+				div
+					input#subs(type="text", name="tracks", placeholder="Track Topics")
+				input#go(type="submit", value="track!")
+				span#alert Spaces seperate topics
+			div.statuses
+		
+		
+		div.clouds
+		div.clouds-bottom
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+		script(src="/socket.io/socket.io.js")
+		script(src="/js/twitsongs.js")
