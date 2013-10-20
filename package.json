@@ -1,0 +1,27 @@
+{
+  "name": "Twit-songs",
+  "version": "0.0.0",
+  "description": "Track Tweets real time",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TJkrusinski/Twit-songs.git"
+  },
+  "keywords": [
+    "twitter",
+    "tweets",
+    "real",
+    "time"
+  ],
+  "author": "TJ Krusinski",
+  "license": "BSD",
+  "dependencies": {
+    "jade": "~0.35.0",
+    "socket.io": "~0.9.16",
+    "express": "~3.4.2",
+    "twitter": "~0.2.3"
+  }
+}
